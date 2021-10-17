@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppD2S2VGuaray.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+            <Label Text="Sistema de Promedios" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Text="Nota Seguimiento 1" FontSize="14" Margin="10" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtValor1" Margin="0,0,-10,0" Keyboard="Numeric" HorizontalOptions="Start" Placeholder="Parcial 1" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="Nota Examen 1"  FontSize="14" Margin="10" TextColor="Black" Grid.Row="1"  Grid.Column="0"/>
+            <Entry x:Name="txtExamen1" Keyboard="Numeric" HorizontalOptions="Start" Placeholder="Examen 1" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Nota seguimiento 2"  FontSize="14" Margin="10" TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtValor2" Keyboard="Numeric" HorizontalOptions="Start" Placeholder="Parcial 2" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="Nota Examen 2"  FontSize="14" Margin="10" TextColor="Black" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtExamen2" Keyboard="Numeric" HorizontalOptions="Start" Placeholder="Examen 2" Grid.Row="3" Grid.Column="1" />
+            <Label Text="Promedio"  FontSize="20" Margin="10"  Grid.Row="4" Grid.Column="0" TextColor="Red"/>
+            <Entry x:Name="txtPromedio" Placeholder="Promedio" Margin="-15"  IsReadOnly="true" Grid.Row="4" Grid.Column="1"/>
+        </Grid>
+        <Grid Margin="-10">
+            <Button x:Name="btnCalcular" HorizontalOptions="Center" FontSize="18" Padding="10" Text="Calcular" Margin="-20" BackgroundColor="Green" Clicked="btnCalcular_Clicked"/>
+        
+        </Grid>
+        <Label Text="Desarrollado por: Vinicio Guaray"  FontSize="14" HorizontalTextAlignment="Center" Margin="40"   TextColor="Black"/>
+
+
+    </StackLayout>
+
+</ContentPage>
