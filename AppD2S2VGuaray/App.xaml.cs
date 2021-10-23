@@ -9,8 +9,8 @@ namespace AppD2S2VGuaray
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Login());
+           // MainPage = new MainPage();
         }
 
         protected override void OnStart()

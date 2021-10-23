@@ -4,8 +4,22 @@
              x:Class="AppD2S2VGuaray.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
-            <Label Text="Sistema de Promedios" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Label Text="Sistema de Promedios" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+                <Label Text="" x:Name="lblUsuario" Grid.Row="1"  Grid.Column="1" HorizontalTextAlignment="End" TextColor="White" FontSize="15"/>
+            </StackLayout>
+           
         </Frame>
         <Grid>
             <Grid.RowDefinitions>
@@ -31,8 +45,8 @@
             <Label Text="Promedio"  FontSize="20" Margin="10"  Grid.Row="4" Grid.Column="0" TextColor="Red"/>
             <Entry x:Name="txtPromedio" Placeholder="Promedio" Margin="-15"  IsReadOnly="true" Grid.Row="4" Grid.Column="1"/>
         </Grid>
-        <Grid Margin="-10">
-            <Button x:Name="btnCalcular" HorizontalOptions="Center" FontSize="18" Padding="10" Text="Calcular" Margin="-20" BackgroundColor="Green" Clicked="btnCalcular_Clicked"/>
+        <Grid Margin="-30">
+            <Button x:Name="btnCalcular" HorizontalOptions="Center" FontSize="18" Padding="10" Text="Calcular" Margin="-15" BackgroundColor="Green" Clicked="btnCalcular_Clicked"/>
         
         </Grid>
         <Label Text="Desarrollado por: Vinicio Guaray"  FontSize="14" HorizontalTextAlignment="Center" Margin="40"   TextColor="Black"/>

@@ -10,9 +10,10 @@ namespace AppD2S2VGuaray
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(string usuario)
         {
             InitializeComponent();
+            lblUsuario.Text="usuario: " +usuario;
         }
 
         private void btnCalcular_Clicked(object sender, EventArgs e)
